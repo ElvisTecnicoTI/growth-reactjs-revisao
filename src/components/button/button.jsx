@@ -20,9 +20,9 @@ const ButtonContainer = styled.div`
   }
 `
 
-export default function Button() {
+export default function Button(props) {
   return (
-    <ButtonContainer>
+    <ButtonContainer onClick={props.onClick}>
       <label>Button label</label>
       <button>Button text</button>
     </ButtonContainer>

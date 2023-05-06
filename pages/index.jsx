@@ -3,14 +3,19 @@ import Button from '../src/components/button/button'
 import Input from '../src/components/input/input'
 
 export default function HomePage() {
+
+  const handleLabelClick = () => {
+    console.log('HANDLE LABEL CLICK')
+  }
+
   return (
     <>
-      <Title>Formulário de Login</Title>
-      <label>Voltar a pagina...</label>
+      <Title onClick={handleLabelClick}>Formulário de Login</Title>
+      <label onClick={handleLabelClick}>Voltar a pagina...</label>
       <form>
         <Input type="email" placeholder="Digite o seu email" />
         <Input type="password" placeholder="Digite a sua senha"/>
-        <Button>Botão</Button>
+        <Button onClick={handleLabelClick}>Botão</Button>
 
       </form>
     
