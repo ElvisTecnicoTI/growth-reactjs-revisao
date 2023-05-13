@@ -22,9 +22,9 @@ const ButtonContainer = styled.div`
 
 export default function Button(props) {
   return (
-    <ButtonContainer onClick={props.onClick}>
+    <ButtonContainer>
       <label>Button label</label>
-      <button>Button text</button>
+      <button {...props}>{props.children}</button>
     </ButtonContainer>
   )
 }
